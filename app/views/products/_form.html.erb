@@ -1,0 +1,62 @@
+<%= form_with(model: product, local: true) do |form| %>
+  <% if product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :productName %>
+    <%= form.text_field :productName, id: :product_productName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :productLine %>
+    <%= form.text_field :productLine, id: :product_productLine %>
+  </div>
+
+  <div class="field">
+    <%= form.label :productScale %>
+    <%= form.text_field :productScale, id: :product_productScale %>
+  </div>
+
+  <div class="field">
+    <%= form.label :productVendor %>
+    <%= form.text_field :productVendor, id: :product_productVendor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :productDescription %>
+    <%= form.text_area :productDescription, id: :product_productDescription %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantityInStock %>
+    <%= form.number_field :quantityInStock, id: :product_quantityInStock %>
+  </div>
+
+  <div class="field">
+    <%= form.label :buyPrice %>
+    <%= form.text_field :buyPrice, id: :product_buyPrice %>
+  </div>
+
+  <div class="field">
+    <%= form.label :MSRP %>
+    <%= form.text_field :MSRP, id: :product_MSRP %>
+  </div>
+
+  <div class="field">
+    <%= form.label :–no-migration %>
+    <%= form.text_field :–no-migration, id: :product_–no-migration %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

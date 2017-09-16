@@ -1,0 +1,82 @@
+<%= form_with(model: customer, local: true) do |form| %>
+  <% if customer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(customer.errors.count, "error") %> prohibited this customer from being saved:</h2>
+
+      <ul>
+      <% customer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :customerName %>
+    <%= form.text_field :customerName, id: :customer_customerName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contactLastName %>
+    <%= form.text_field :contactLastName, id: :customer_contactLastName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contactFirstName %>
+    <%= form.text_field :contactFirstName, id: :customer_contactFirstName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone, id: :customer_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :addressLine1 %>
+    <%= form.text_field :addressLine1, id: :customer_addressLine1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :addressLine2 %>
+    <%= form.text_field :addressLine2, id: :customer_addressLine2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :customer_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state, id: :customer_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :postalCode %>
+    <%= form.text_field :postalCode, id: :customer_postalCode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country, id: :customer_country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :salesRepEmployeeNumber %>
+    <%= form.number_field :salesRepEmployeeNumber, id: :customer_salesRepEmployeeNumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :creditLimit %>
+    <%= form.text_field :creditLimit, id: :customer_creditLimit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :–no-migration %>
+    <%= form.text_field :–no-migration, id: :customer_–no-migration %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

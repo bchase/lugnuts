@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  orderDate: 2017-09-15
+  requiredDate: 2017-09-15
+  shippedDate: 2017-09-15
+  status: MyString
+  comments: MyText
+  customerNumber: 1
+  –no-migration: MyString
+
+two:
+  orderDate: 2017-09-15
+  requiredDate: 2017-09-15
+  shippedDate: 2017-09-15
+  status: MyString
+  comments: MyText
+  customerNumber: 1
+  –no-migration: MyString
