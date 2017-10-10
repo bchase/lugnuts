@@ -6,7 +6,6 @@ one:
   quantityOrdered: 1
   priceEach: 9.99
   orderLineNumber: 1
-  –no-migration: MyString
 
 two:
   orderNumber: 1
@@ -14,4 +13,3 @@ two:
   quantityOrdered: 1
   priceEach: 9.99
   orderLineNumber: 1
-  –no-migration: MyString

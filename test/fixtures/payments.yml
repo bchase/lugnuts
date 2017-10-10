@@ -5,11 +5,9 @@ one:
   checkNumber: MyString
   paymentDate: 2017-09-15
   amount: 9.99
-  –no-migration: MyString
 
 two:
   customerNumber: 1
   checkNumber: MyString
   paymentDate: 2017-09-15
   amount: 9.99
-  –no-migration: MyString

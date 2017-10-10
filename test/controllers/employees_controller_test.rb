@@ -17,7 +17,7 @@ class EmployeesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create employee" do
     assert_difference('Employee.count') do
-      post employees_url, params: { employee: { email: @employee.email, extension: @employee.extension, firstName: @employee.firstName, jobTitle: @employee.jobTitle, lastName: @employee.lastName, officeCode: @employee.officeCode, reportsTo: @employee.reportsTo, –no-migration: @employee.–no-migration } }
+      post employees_url, params: { employee: { email: @employee.email, extension: @employee.extension, firstName: @employee.firstName, jobTitle: @employee.jobTitle, lastName: @employee.lastName, officeCode: @employee.officeCode, reportsTo: @employee.reportsTo } }
     end
 
     assert_redirected_to employee_url(Employee.last)
@@ -34,7 +34,7 @@ class EmployeesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update employee" do
-    patch employee_url(@employee), params: { employee: { email: @employee.email, extension: @employee.extension, firstName: @employee.firstName, jobTitle: @employee.jobTitle, lastName: @employee.lastName, officeCode: @employee.officeCode, reportsTo: @employee.reportsTo, –no-migration: @employee.–no-migration } }
+    patch employee_url(@employee), params: { employee: { email: @employee.email, extension: @employee.extension, firstName: @employee.firstName, jobTitle: @employee.jobTitle, lastName: @employee.lastName, officeCode: @employee.officeCode, reportsTo: @employee.reportsTo } }
     assert_redirected_to employee_url(@employee)
   end
 

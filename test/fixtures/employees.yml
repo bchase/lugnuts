@@ -8,7 +8,6 @@ one:
   officeCode: MyString
   reportsTo: 1
   jobTitle: MyString
-  –no-migration: MyString
 
 two:
   lastName: MyString
@@ -18,4 +17,3 @@ two:
   officeCode: MyString
   reportsTo: 1
   jobTitle: MyString
-  –no-migration: MyString

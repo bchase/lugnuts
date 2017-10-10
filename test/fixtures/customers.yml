@@ -13,7 +13,6 @@ one:
   country: MyString
   salesRepEmployeeNumber: 1
   creditLimit: 9.99
-  –no-migration: MyString
 
 two:
   customerName: MyString
@@ -28,4 +27,3 @@ two:
   country: MyString
   salesRepEmployeeNumber: 1
   creditLimit: 9.99
-  –no-migration: MyString

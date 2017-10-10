@@ -17,7 +17,7 @@ class OfficesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create office" do
     assert_difference('Office.count') do
-      post offices_url, params: { office: { addressLine1: @office.addressLine1, addressLine2: @office.addressLine2, city: @office.city, country: @office.country, phone: @office.phone, postalCode: @office.postalCode, state: @office.state, territory: @office.territory, –no-migration: @office.–no-migration } }
+      post offices_url, params: { office: { addressLine1: @office.addressLine1, addressLine2: @office.addressLine2, city: @office.city, country: @office.country, phone: @office.phone, postalCode: @office.postalCode, state: @office.state, territory: @office.territory } }
     end
 
     assert_redirected_to office_url(Office.last)
@@ -34,7 +34,7 @@ class OfficesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update office" do
-    patch office_url(@office), params: { office: { addressLine1: @office.addressLine1, addressLine2: @office.addressLine2, city: @office.city, country: @office.country, phone: @office.phone, postalCode: @office.postalCode, state: @office.state, territory: @office.territory, –no-migration: @office.–no-migration } }
+    patch office_url(@office), params: { office: { addressLine1: @office.addressLine1, addressLine2: @office.addressLine2, city: @office.city, country: @office.country, phone: @office.phone, postalCode: @office.postalCode, state: @office.state, territory: @office.territory } }
     assert_redirected_to office_url(@office)
   end
 

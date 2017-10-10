@@ -7,7 +7,6 @@ one:
   status: MyString
   comments: MyText
   customerNumber: 1
-  –no-migration: MyString
 
 two:
   orderDate: 2017-09-15
@@ -16,4 +15,3 @@ two:
   status: MyString
   comments: MyText
   customerNumber: 1
-  –no-migration: MyString

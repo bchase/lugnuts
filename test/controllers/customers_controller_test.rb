@@ -17,7 +17,7 @@ class CustomersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create customer" do
     assert_difference('Customer.count') do
-      post customers_url, params: { customer: { addressLine1: @customer.addressLine1, addressLine2: @customer.addressLine2, city: @customer.city, contactFirstName: @customer.contactFirstName, contactLastName: @customer.contactLastName, country: @customer.country, creditLimit: @customer.creditLimit, customerName: @customer.customerName, phone: @customer.phone, postalCode: @customer.postalCode, salesRepEmployeeNumber: @customer.salesRepEmployeeNumber, state: @customer.state, –no-migration: @customer.–no-migration } }
+      post customers_url, params: { customer: { addressLine1: @customer.addressLine1, addressLine2: @customer.addressLine2, city: @customer.city, contactFirstName: @customer.contactFirstName, contactLastName: @customer.contactLastName, country: @customer.country, creditLimit: @customer.creditLimit, customerName: @customer.customerName, phone: @customer.phone, postalCode: @customer.postalCode, salesRepEmployeeNumber: @customer.salesRepEmployeeNumber, state: @customer.state } }
     end
 
     assert_redirected_to customer_url(Customer.last)
@@ -34,7 +34,7 @@ class CustomersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update customer" do
-    patch customer_url(@customer), params: { customer: { addressLine1: @customer.addressLine1, addressLine2: @customer.addressLine2, city: @customer.city, contactFirstName: @customer.contactFirstName, contactLastName: @customer.contactLastName, country: @customer.country, creditLimit: @customer.creditLimit, customerName: @customer.customerName, phone: @customer.phone, postalCode: @customer.postalCode, salesRepEmployeeNumber: @customer.salesRepEmployeeNumber, state: @customer.state, –no-migration: @customer.–no-migration } }
+    patch customer_url(@customer), params: { customer: { addressLine1: @customer.addressLine1, addressLine2: @customer.addressLine2, city: @customer.city, contactFirstName: @customer.contactFirstName, contactLastName: @customer.contactLastName, country: @customer.country, creditLimit: @customer.creditLimit, customerName: @customer.customerName, phone: @customer.phone, postalCode: @customer.postalCode, salesRepEmployeeNumber: @customer.salesRepEmployeeNumber, state: @customer.state } }
     assert_redirected_to customer_url(@customer)
   end
 

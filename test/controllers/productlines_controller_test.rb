@@ -17,7 +17,7 @@ class ProductlinesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create productline" do
     assert_difference('Productline.count') do
-      post productlines_url, params: { productline: { htmlDescription: @productline.htmlDescription, image: @productline.image, textDescription: @productline.textDescription, –no-migration: @productline.–no-migration } }
+      post productlines_url, params: { productline: { htmlDescription: @productline.htmlDescription, image: @productline.image, textDescription: @productline.textDescription } }
     end
 
     assert_redirected_to productline_url(Productline.last)
@@ -34,7 +34,7 @@ class ProductlinesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update productline" do
-    patch productline_url(@productline), params: { productline: { htmlDescription: @productline.htmlDescription, image: @productline.image, textDescription: @productline.textDescription, –no-migration: @productline.–no-migration } }
+    patch productline_url(@productline), params: { productline: { htmlDescription: @productline.htmlDescription, image: @productline.image, textDescription: @productline.textDescription } }
     assert_redirected_to productline_url(@productline)
   end
 

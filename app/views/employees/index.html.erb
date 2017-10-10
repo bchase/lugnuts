@@ -12,7 +12,6 @@
       <th>Officecode</th>
       <th>Reportsto</th>
       <th>Jobtitle</th>
-      <th>–no-migration</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -27,7 +26,6 @@
         <td><%= employee.officeCode %></td>
         <td><%= employee.reportsTo %></td>
         <td><%= employee.jobTitle %></td>
-        <td><%= employee.–no-migration %></td>
         <td><%= link_to 'Show', employee %></td>
         <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
         <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>

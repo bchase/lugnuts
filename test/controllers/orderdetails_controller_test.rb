@@ -17,7 +17,7 @@ class OrderdetailsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create orderdetail" do
     assert_difference('Orderdetail.count') do
-      post orderdetails_url, params: { orderdetail: { orderLineNumber: @orderdetail.orderLineNumber, orderNumber: @orderdetail.orderNumber, priceEach: @orderdetail.priceEach, productCode: @orderdetail.productCode, quantityOrdered: @orderdetail.quantityOrdered, –no-migration: @orderdetail.–no-migration } }
+      post orderdetails_url, params: { orderdetail: { orderLineNumber: @orderdetail.orderLineNumber, orderNumber: @orderdetail.orderNumber, priceEach: @orderdetail.priceEach, productCode: @orderdetail.productCode, quantityOrdered: @orderdetail.quantityOrdered } }
     end
 
     assert_redirected_to orderdetail_url(Orderdetail.last)
@@ -34,7 +34,7 @@ class OrderdetailsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update orderdetail" do
-    patch orderdetail_url(@orderdetail), params: { orderdetail: { orderLineNumber: @orderdetail.orderLineNumber, orderNumber: @orderdetail.orderNumber, priceEach: @orderdetail.priceEach, productCode: @orderdetail.productCode, quantityOrdered: @orderdetail.quantityOrdered, –no-migration: @orderdetail.–no-migration } }
+    patch orderdetail_url(@orderdetail), params: { orderdetail: { orderLineNumber: @orderdetail.orderLineNumber, orderNumber: @orderdetail.orderNumber, priceEach: @orderdetail.priceEach, productCode: @orderdetail.productCode, quantityOrdered: @orderdetail.quantityOrdered } }
     assert_redirected_to orderdetail_url(@orderdetail)
   end
 

@@ -3,11 +3,9 @@
 one:
   textDescription: MyString
   htmlDescription: MyText
-  image: 
-  –no-migration: MyString
+  image:
 
 two:
   textDescription: MyString
   htmlDescription: MyText
-  image: 
-  –no-migration: MyString
+  image:

@@ -9,7 +9,6 @@ one:
   country: MyString
   postalCode: MyString
   territory: MyString
-  –no-migration: MyString
 
 two:
   city: MyString
@@ -20,4 +19,3 @@ two:
   country: MyString
   postalCode: MyString
   territory: MyString
-  –no-migration: MyString
