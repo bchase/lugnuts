@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+body{background-color: #337ab7; margin: 0;}
+div.container{width: 90%; max-width: 1200px; background-color: #fff; box-sizing: border-box; padding: 2%; margin: 0 auto;}
+img{width: 100%}
+a:hover{background-color: transparent; color:#333;}
+@media screen and (min-width: 768px){
+	div.container{margin-top: 150px;}
+	nav.topnav{position: fixed; width: 90%; max-width: 1200px; top: 0; left: 50%; transform: translatex(-50%); background-color: #fff; border-bottom: 1px solid #333; display: flex; justify-content: space-between;}
+	nav.topnav p:first-of-type{max-width: 270px;}
+	nav.topnav > p:not(:first-of-type){display: flex; max-width: 230px;}
+	nav.topnav > p:not(:first-of-type) a{display: inline-block; text-align: center; border: 1px solid #333; box-sizing: border-box; padding: 10px; width: 50%; margin-right: 5%;}
+	nav.topnav > p:not(:first-of-type) a:hover{background-color: #ddd;}
+}
+@media screen and (max-width: 767px){
+	nav.topnav{border-bottom: 1px solid #333; padding-bottom: 15px;}
+	nav.topnav p:first-of-type{max-width: 80%; display: block; margin: 0 auto;}
+	nav.topnav > p:not(:first-of-type){display: flex; justify-content: space-evenly}
+	nav.topnav > p:not(:first-of-type) a{display: inline-block; text-align: center; border: 1px solid #333; padding: 15px; margin: 0 5%;}
+}
