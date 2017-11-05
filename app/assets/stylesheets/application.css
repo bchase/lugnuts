@@ -13,13 +13,16 @@
  *= require_tree .
  *= require_self
  */
-body{background-color: #337ab7; margin: 0;}
+ /*----- Universal Styles -----*/
+body{background-color: #337ab7; margin: 0; font: normal 14px arial}
 div.container{width: 90%; max-width: 1200px; background-color: #fff; box-sizing: border-box; padding: 2%; margin: 0 auto;}
 img{width: 100%}
 a:hover{background-color: transparent; color:#333;}
+
+/*----- Main Nav -----*/
 @media screen and (min-width: 768px){
 	div.container{margin-top: 150px;}
-	nav.topnav{position: fixed; width: 90%; max-width: 1200px; top: 0; left: 50%; transform: translatex(-50%); background-color: #fff; border-bottom: 1px solid #333; display: flex; justify-content: space-between;}
+	nav.topnav{position: fixed; width: 90%; max-width: 1200px; top: 0; left: 50%; transform: translatex(-50%); background-color: #fff; border-bottom: 1px solid #333; display: flex; justify-content: space-between; z-index: 1;}
 	nav.topnav p:first-of-type{max-width: 270px;}
 	nav.topnav > p:not(:first-of-type){display: flex; max-width: 230px;}
 	nav.topnav > p:not(:first-of-type) a{display: inline-block; text-align: center; border: 1px solid #333; box-sizing: border-box; padding: 10px; width: 50%; margin-right: 5%;}
@@ -30,4 +33,15 @@ a:hover{background-color: transparent; color:#333;}
 	nav.topnav p:first-of-type{max-width: 80%; display: block; margin: 0 auto;}
 	nav.topnav > p:not(:first-of-type){display: flex; justify-content: space-evenly}
 	nav.topnav > p:not(:first-of-type) a{display: inline-block; text-align: center; border: 1px solid #333; padding: 15px; margin: 0 5%;}
+}
+
+/*----- Products Page -----*/
+#product-container{text-align: center;}
+.product{display: inline-block; text-align: left; width: 30%; border: 1px solid #333; margin: 1%; position: relative;}
+.product h3{font-size: 1rem; position: absolute; top: 0; left: 0; margin: 0; width: 100%; box-sizing: border-box; padding: 5%; background-color: rgba(119,119,119,.5);}
+.product > p{font-size: 1.4rem; margin: 0; padding: 5%;}
+.product section{background-color: #ddd; display: flex; justify-content: space-evenly;}
+@media screen and (max-width: 767px){
+	.product{display: block; margin: 10% 5%; width: auto;}
+	.product > p, .product h3{font-size: 6vw;}
 }

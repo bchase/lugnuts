@@ -1,17 +1,20 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Products</h1>
-
-  <% @products.each do |product| %>
-    <div class='product'>
-      <%= link_to image_tag(product.productlines.image || 'missing.jpg' ), product_path(product) %>
-      <ul>
-        <li><%= product.productName %></li>
-        <li><%= product.MSRP %></li>
-      </ul>
-    </div>
-  <% end %>
-
+<main id="product-container">
+	<% @products.each do |product| %>
+		<section class='product'>
+			<%= link_to image_tag(product.productlines.image || 'missing.jpg' ), product_path(product) %>
+			<h3><%= product.productName %></h3>
+			<p><%= product.MSRP %></p>
+			<section>
+				<%= link_to image_tag('details-icon.png' || 'missing.jpg' ), product_path(product) %>
+				<%= image_tag('add-icon.png' || 'missing.jpg') %>
+			</section>
+		</section>
+	<% end %>
+</main>
+	
 <br>
 
 <%= link_to 'New Product', new_product_path %>
