@@ -1,7 +1,18 @@
 <nav class="topnav">
 	<p><%= link_to(image_tag("logo.png"), root_path) %></p>
 	<p>
-		<a href="#"><%= image_tag("login-icon.png") %><br>Login</a>
+    <% if user_signed_in? %>
+      <%= link_to destroy_user_session_path, method: :delete do %>
+        <%= image_tag("login-icon.png") %> <br>Logout
+      <% end %>
+    <% else %>
+      <%= link_to new_user_session_path do %>
+        <%= image_tag("login-icon.png") %> <br>Login
+      <% end %>
+      <%= link_to new_user_registration_path do %>
+        <%= image_tag("missing.jpg") %> <br>Sign Up
+      <% end %>
+    <% end %>
 		<a href="#"><%= image_tag("checkout-icon.png") %><br>Cart</a>
 	</p>
 </nav>
