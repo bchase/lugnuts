@@ -1,4 +1,16 @@
+
+
 <p id="notice"><%= notice %></p>
+
+<section class='product'>
+			<%= link_to image_tag(@product.productlines.image || 'missing.jpg' ), product_path(@product) %>
+			<h3><%= @product.productName %></h3>
+			<p><%= @product.MSRP %></p>
+			<section>
+				<%= link_to image_tag('details-icon.png' || 'missing.jpg' ), product_path(@product) %>
+				<%= image_tag('add-icon.png' || 'missing.jpg') %>
+			</section>
+		</section>
 
 <p>
   <strong>Productname:</strong>
