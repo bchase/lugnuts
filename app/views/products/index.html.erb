@@ -8,8 +8,14 @@
 			<h3><%= product.productName %></h3>
 			<p><%= product.MSRP %></p>
 			<section>
-				<%= link_to image_tag('details-icon.png' || 'missing.jpg' ), product_path(product) %>
-				<%= image_tag('add-icon.png' || 'missing.jpg') %>
+				<%= link_to product_path(product) do %>
+				  <%= image_tag('details-icon.png' || 'missing.jpg' ) %>
+				  <br>View
+				<% end %>
+				<%= link_to '#' do %>
+				  <%= image_tag('add-icon.png' || 'missing.jpg') %>
+				  <br>Add
+				<% end %>
 			</section>
 		</section>
 	<% end %>
