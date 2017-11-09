@@ -18,6 +18,12 @@ body{background-color: #337ab7; margin: 0; font: normal 14px arial}
 div.container{width: 90%; max-width: 1200px; background-color: #fff; box-sizing: border-box; padding: 2%; margin: 0 auto;}
 img{width: 100%}
 a:hover{background-color: transparent; color:#333;}
+.btn{background-color: #337ab7; border: 1px solid #337ab7; color: #fff; text-decoration: none; padding: 1%; font-size: 1rem;}
+.btn:hover{background-color: #ddd; color: #333;  border-color: #333;}
+.alert{position: fixed; width: 90%; max-width: 1200px; text-align: center; background-color: red; color: white; left: 50%; transform: translatex(-50%);}
+@media screen and (max-width: 767px){
+	.alert{position: relative;}
+}
 
 /*----- Main Nav -----*/
 @media screen and (min-width: 768px){
@@ -44,4 +50,25 @@ a:hover{background-color: transparent; color:#333;}
 @media screen and (max-width: 767px){
 	.product{display: block; margin: 10% 5%; width: auto;}
 	.product > p, .product h3{font-size: 6vw;}
+}
+
+/*----- Products Detail Page -----*/
+#product-detail img{width: 100%; max-width: 400px; margin: 0 20px 20px 0;}
+#product-detail > div{width: 100%; max-width: 600px; display: inline-block; vertical-align: top;}
+#product-detail nav{margin-top: 30px;}
+#product-detail nav a{background-color: #337ab7; border: 1px solid #337ab7; color: #fff; text-decoration: none; padding: 1%; margin-right: 2%; font-size: 1rem; display: inline-block; min-width: 100px; text-align: center;}
+#product-detail nav a:last-of-type{margin-right: 0;}
+#product-detail nav a:hover{background-color: #ddd; color: #333; border-color: #333;}
+
+/*----- Sign Up/Login Pages -----*/
+.user-form{width: 80%; max-width: 500px; margin: 10% auto; background-color: #ddd; border: 1px solid #333; box-sizing: border-box; padding: 2%; text-align: center; font-size: 1.2rem;}
+.user-form input{width: 100%; font-size: 1.2rem; box-sizing: border-box; padding: 5px;}
+.user-form h2{margin-top: 0;}
+.user-form .remember{margin: 5% 0;}
+.user-form .remember input, .user-form .remember label{display: inline; width: auto;}
+.user-form .actions{width:80%; margin: 5% auto; background-color: #337ab7;}
+.user-form .actions input{background-color: transparent; color: #fff; padding: 5px 0; border: 0;}
+.user-form .actions input:hover{background-color: #88abca; cursor: pointer;}
+@media screen and (max-width: 767px){
+	.user-form > a{border:1px solid #333; display: block; width: 100%; box-sizing: border-box; padding; 5px;}
 }

@@ -2,55 +2,22 @@
 
 <p id="notice"><%= notice %></p>
 
-<section class='product'>
-			<%= link_to image_tag(@product.productlines.image || 'missing.jpg' ), product_path(@product) %>
-			<h3><%= @product.productName %></h3>
-			<p><%= @product.MSRP %></p>
-			<section>
-				<%= link_to image_tag('details-icon.png' || 'missing.jpg' ), product_path(@product) %>
-				<%= image_tag('add-icon.png' || 'missing.jpg') %>
-			</section>
-		</section>
+<div id="product-detail">
+	<%= image_tag(@product.productlines.image || 'missing.jpg' ) %>
+	
+	<div>
+		<h1><%= @product.productName %></h1>
 
-<p>
-  <strong>Productname:</strong>
-  <%= @product.productName %>
-</p>
+		<h3><%= @product.buyPrice %></h3>
 
-<p>
-  <strong>Productline:</strong>
-  <%= @product.productLine %>
-</p>
+		<p><b>Vendor: </b><%= @product.productVendor %></p>
 
-<p>
-  <strong>Productscale:</strong>
-  <%= @product.productScale %>
-</p>
-
-<p>
-  <strong>Productvendor:</strong>
-  <%= @product.productVendor %>
-</p>
-
-<p>
-  <strong>Productdescription:</strong>
-  <%= @product.productDescription %>
-</p>
-
-<p>
-  <strong>Quantityinstock:</strong>
-  <%= @product.quantityInStock %>
-</p>
-
-<p>
-  <strong>Buyprice:</strong>
-  <%= @product.buyPrice %>
-</p>
-
-<p>
-  <strong>Msrp:</strong>
-  <%= @product.MSRP %>
-</p>
-
-<<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+		<p><b>Description: </b><%= @product.productDescription %></p>
+		
+		<nav>
+			<%= link_to 'Add to Cart', '#' %>
+			<%= link_to 'Edit', edit_product_path(@product) %>
+			<%= link_to 'Back', products_path %>
+		</nav>
+	</div>
+</div>
