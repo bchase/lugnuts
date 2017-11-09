@@ -70,5 +70,5 @@ a:hover{background-color: transparent; color:#333;}
 .user-form .actions input{background-color: transparent; color: #fff; padding: 5px 0; border: 0;}
 .user-form .actions input:hover{background-color: #88abca; cursor: pointer;}
 @media screen and (max-width: 767px){
-	.user-form > a{border:1px solid #333; display: block; width: 100%; box-sizing: border-box; padding; 5px;}
+	.user-form > a{border:1px solid #333; display: block; width: 100%; box-sizing: border-box; padding: 5px;}
 }
